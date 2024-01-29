@@ -87,14 +87,16 @@ function highlightMeeshoProductDetails() {
   const productPrices = document.querySelectorAll('#__next div.sc-bcXHqe.eWRWAb.ShippingInfo__PriceRow-sc-frp12n-1.eMWeDN h4');
   const discountPrices = document.querySelectorAll('#container > div > div._2c7YLP.UtUXW0._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div._1YokD2._3Mn1Gg.col-8-12 > div:nth-child(2) > div > div.dyC4hf > div.CEmiEU > div > div._3I9_wc._2p6lqe');
   const productTitles = document.querySelectorAll('#__next > div.sc-ipEyDJ.Pagestyled__ContainerStyled-sc-ynkej6-0.gFCkMM.eQYgmX > div > div.sc-eDWCr.gYhLHJ > div.sc-bcXHqe.hcOLTO.ShippingInfo__DetailCard-sc-frp12n-0.dKuTbW.ShippingInfo__DetailCard-sc-frp12n-0.dKuTbW > span');
-  const productOffer = document.querySelectorAll('#__next > div.sc-bcXHqe.Pagestyled__ContainerStyled-sc-ynkej6-0.cppHWG.eQYgmX > div > div.sc-dkrFOg.eTpILp > div.sc-ftTHYK.hqYVzH.ShippingInfo__DetailCard-sc-frp12n-0.dKuTbW.ShippingInfo__DetailCard-sc-frp12n-0.dKuTbW > div.sc-ftTHYK.lljzUO.ShippingInfo__PriceRow-sc-frp12n-1.eMWeDN.ShippingInfo__PriceRow-sc-frp12n-1.eMWeDN > span.sc-eDvSVe.dOqdSt');
+  const productOffer = document.querySelectorAll('#__next > div.sc-ipEyDJ.Pagestyled__ContainerStyled-sc-ynkej6-0.gFCkMM.eQYgmX > div > div.sc-eDWCr.gYhLHJ > div.sc-bcXHqe.hcOLTO.ShippingInfo__DetailCard-sc-frp12n-0.dKuTbW.ShippingInfo__DetailCard-sc-frp12n-0.dKuTbW > div.sc-bcXHqe.eWRWAb.ShippingInfo__PriceRow-sc-frp12n-1.eMWeDN.ShippingInfo__PriceRow-sc-frp12n-1.eMWeDN > span.sc-dkrFOg.hSBOpl');
   const productTotal = document.querySelectorAll('#app-layout-body > div > div > div.sc-kDDrLX.sc-bdxVC.bSVgRk.eDXKIy > div.sc-fvNpTx.jA-dyDh.sc-feINqK.gTfMRp.sc-feINqK.gTfMRp > div.sc-eEpejC.cDWdJc > div.sc-eBxihg.cppOtL > span:nth-child(2)')
-
+  const fullPrice = document.querySelectorAll('#__next > div.sc-ipEyDJ.Pagestyled__ContainerStyled-sc-ynkej6-0.gFCkMM.eQYgmX > div > div.sc-eDWCr.gYhLHJ > div.sc-bcXHqe.hcOLTO.ShippingInfo__DetailCard-sc-frp12n-0.dKuTbW.ShippingInfo__DetailCard-sc-frp12n-0.dKuTbW > div.sc-bcXHqe.eWRWAb.ShippingInfo__PriceRow-sc-frp12n-1.eMWeDN.ShippingInfo__PriceRow-sc-frp12n-1.eMWeDN > p');
+  
   price(productPrices);
   title(productTitles);
   discount(discountPrices);
   offer(productOffer);
   final(productTotal);
+  fullprice(fullPrice);
 }
 
 
