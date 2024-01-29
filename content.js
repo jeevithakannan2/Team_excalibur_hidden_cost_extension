@@ -2,55 +2,55 @@ let isHighlighting = false;
 
 function title(elements) {
   elements.forEach(element => {
-    element.style.backgroundColor = isHighlighting ? '#BFD8AF' : ''; // Toggle background color
-    element.style.padding = isHighlighting ? '2px 5px' : ''; // Toggle padding
-    element.style.borderRadius = isHighlighting ? '3px' : ''; // Toggle border radius
-    element.style.fontWeight = isHighlighting ? 'bold' : ''; // Toggle font weight
+    element.style.backgroundColor = isHighlighting ? '#BFD8AF' : '';
+    element.style.padding = isHighlighting ? '2px 5px' : ''; 
+    element.style.borderRadius = isHighlighting ? '3px' : ''; 
+    element.style.fontWeight = isHighlighting ? 'bold' : ''; 
   });
 }
 
 function price(elements) {
   elements.forEach(element => {
-    element.style.backgroundColor = isHighlighting ? '#4F6F52' : ''; // Toggle background color
-    element.style.padding = isHighlighting ? '2px 5px' : ''; // Toggle padding
-    element.style.borderRadius = isHighlighting ? '3px' : ''; // Toggle border radius
-    element.style.fontWeight = isHighlighting ? 'bold' : ''; // Toggle font weight
+    element.style.backgroundColor = isHighlighting ? '#4F6F52' : '';
+    element.style.padding = isHighlighting ? '2px 5px' : ''; 
+    element.style.borderRadius = isHighlighting ? '3px' : ''; 
+    element.style.fontWeight = isHighlighting ? 'bold' : ''; 
   });
 }
 
 function discount(elements) {
   elements.forEach(element => {
-    element.style.backgroundColor = isHighlighting ? '#D2E3C8' : ''; // Toggle background color
-    element.style.padding = isHighlighting ? '2px 5px' : ''; // Toggle padding
-    element.style.borderRadius = isHighlighting ? '3px' : ''; // Toggle border radius
-    element.style.fontWeight = isHighlighting ? 'bold' : ''; // Toggle font weight
+    element.style.backgroundColor = isHighlighting ? '#D2E3C8' : '';
+    element.style.padding = isHighlighting ? '2px 5px' : ''; 
+    element.style.borderRadius = isHighlighting ? '3px' : ''; 
+    element.style.fontWeight = isHighlighting ? 'bold' : ''; 
   });
 }
 
 function offer(elements) {
   elements.forEach(element => {
-    element.style.backgroundColor = isHighlighting ? '#D4E7C5' : ''; // Toggle background color
-    element.style.padding = isHighlighting ? '2px 5px' : ''; // Toggle padding
-    element.style.borderRadius = isHighlighting ? '3px' : ''; // Toggle border radius
-    element.style.fontWeight = isHighlighting ? 'bold' : ''; // Toggle font weight
+    element.style.backgroundColor = isHighlighting ? '#D4E7C5' : '';
+    element.style.padding = isHighlighting ? '2px 5px' : ''; 
+    element.style.borderRadius = isHighlighting ? '3px' : ''; 
+    element.style.fontWeight = isHighlighting ? 'bold' : ''; 
   });
 }
 
 function fullprice(elements) {
   elements.forEach(element => {
-    element.style.backgroundColor = isHighlighting ? '#D2E3C8' : ''; // Toggle background color
-    element.style.padding = isHighlighting ? '2px 5px' : ''; // Toggle padding
-    element.style.borderRadius = isHighlighting ? '3px' : ''; // Toggle border radius
-    element.style.fontWeight = isHighlighting ? 'bold' : ''; // Toggle font weight
+    element.style.backgroundColor = isHighlighting ? '#D2E3C8' : '';
+    element.style.padding = isHighlighting ? '2px 5px' : ''; 
+    element.style.borderRadius = isHighlighting ? '3px' : ''; 
+    element.style.fontWeight = isHighlighting ? 'bold' : ''; 
   });
 }
 
 function final(elements) {
   elements.forEach(element => {
-    element.style.backgroundColor = isHighlighting ? '#D2E3C8' : ''; // Toggle background color
-    element.style.padding = isHighlighting ? '2px 5px' : ''; // Toggle padding
-    element.style.borderRadius = isHighlighting ? '3px' : ''; // Toggle border radius
-    element.style.fontWeight = isHighlighting ? 'bold' : ''; // Toggle font weight
+    element.style.backgroundColor = isHighlighting ? '#D2E3C8' : '';
+    element.style.padding = isHighlighting ? '2px 5px' : ''; 
+    element.style.borderRadius = isHighlighting ? '3px' : ''; 
+    element.style.fontWeight = isHighlighting ? 'bold' : ''; 
   });
 }
 
