@@ -11,11 +11,12 @@ body {
     padding: 20px;
     height: 500px;
     width: 500px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .highlight_container {
-    width: 300px;
-    padding: 20px;
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -109,11 +110,11 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #ccc;
 }
 
  h1 {
-     text-align: center;
+     text-align: start;
      margin-bottom: 20px;
  }
 
@@ -126,7 +127,9 @@ button:hover {
      width: 100%;
      padding: 10px;
      margin-bottom: 20px;
-     border: 1px solid #ccc;
+     color: whitesmoke;
+     background-color: #112e42;
+     border: 1px solid var(--main-color);
      border-radius: 5px;
      box-sizing: border-box;
  }
@@ -134,10 +137,57 @@ button:hover {
  .result {
      margin-top: 20px;
      padding: 20px;
-     background-color: #f4f4f4;
+     background-color: var(--secondary-bg-color);
      border-radius: 5px;
  }
 
  .result h2 {
      margin-bottom: 10px;
+ }
+
+ .scrap_center {
+    align-items: center;
+    justify-content: center;
+ }
+
+.text-animate {
+     position: relative;
+     width: 32.8rem;
+ }
+
+.text-animate h3 {
+     font-size: 1.2rem;
+     font-weight: 700;
+     color: transparent;
+     -webkit-text-stroke: .7px var(--main-color);
+     background-image: -webkit-linear-gradient(var(--main-color));
+     background-image: linear-gradient(var(--main-color), var(--main-color));
+     background-repeat: no-repeat;
+     -webkit-background-clip: text;
+     background-clip: text;
+     background-position: 0 0;
+
+ }
+.text-animate h3 {
+     animation: homeBgText 6s linear infinite;
+     animation-delay: 1s;
+ }
+
+ @keyframes homeBgText {
+
+     0%,
+     10%,
+     100% {
+         background-position: -33rem 0;
+     }
+
+     65%,
+     85% {
+         background-position: 0 0;
+     }
+ }
+
+ .scraper_container {
+     text-align: center;
+     border: #112e42 3px solid;
  }
