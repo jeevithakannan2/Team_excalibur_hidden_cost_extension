@@ -6,7 +6,7 @@
   "icons": {
     "128": "/images/highlighter.png"
   },
-  "permissions": ["activeTab", "storage"],
+  "permissions": ["activeTab", "storage","tabs"],
   "background": {
     "service_worker": "background.js"
   },
@@ -16,6 +16,21 @@
     },
     "default_popup": "popup.html"
   },
+    "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'",
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "popup.html",
+          "popup.js"
+        ],
+        "matches": [
+          "<all_urls>"
+        ]
+      }
+    ]
+  },
+
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
