@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
+  <section class="highlight_container">
   <div class="popup-container">
     <div class="header">
       <h1>Product Highlighter</h1>
@@ -19,6 +20,19 @@
       </label>
     </div>
   </div>
+</section>
+<section class="scraper_container">
+  <h1>Product Info Scraper</h1>
+    <label for="product_url">Enter Product URL:</label>
+    <input type="text" id="product_url" required>
+    <button id="scrape_button">Scrape</button>
+    <div class="result" id="result_section" style="display: none;">
+        <h2>Product Title:</h2>
+        <p id="product_title"></p>
+        <h2>Product MRP:</h2>
+        <p id="product_mrp"></p>
+    </div>
+</section>
   <script src="popup.js"></script>
 </body>
 </html>

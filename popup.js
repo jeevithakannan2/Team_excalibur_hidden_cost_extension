@@ -16,3 +16,23 @@ document.addEventListener('DOMContentLoaded', function() {
     chrome.storage.local.set({ isHighlighting: isHighlighting });
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('scrape_button').addEventListener('click', function () {
+      var url = document.getElementById('product_url').value.trim();
+      chrome.runtime.sendMessage({ action: "scrape", url: url }, function (response) {
+          displayResult(response);
+      });
+  });
+});
+
+function displayResult(result) {
+  if (result && result.product_title && result.product_mrp) {
+      document.getElementById('result_section').style.display = 'block';
+      document.getElementById('product_title').textContent = result.product_title;
+      document.getElementById('product_mrp').textContent = result.product_mrp;
+  } else {
+      console.error('Invalid result received:', result);
+      // Handle the error, e.g., display a message to the user
+  }
+}

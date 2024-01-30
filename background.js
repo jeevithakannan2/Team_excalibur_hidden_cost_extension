@@ -20,3 +20,19 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 chrome.storage.local.get(['isHighlighting'], function(result) {
   isHighlighting = result.isHighlighting || false;
 });
+
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+    if (message.action === "scrape") {
+        fetch("http://localhost:5000/scrape", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ url: message.url })
+        })
+        .then(response => response.json())
+        .then(data => sendResponse(data))
+        .catch(error => console.error('Error fetching data:', error));
+        return true; // This line tells Chrome to wait for sendResponse
+    }
+});
